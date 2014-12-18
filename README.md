@@ -4,6 +4,23 @@ This is a blank [Play framework](http://www.playframework.com) project that will
 
 ### Getting started
 
+####prerequisites for a windows development machine
+Install Java Development Kit 7 (easiest to do with chocolatey)
+    choco install jdk.install
+    
+Install typesafe activator
+Add path to activator folder to you path environment variable
+    
+Install Ruby
+(if needed, fix the SSL problem: http://stackoverflow.com/questions/15305350/gem-install-fails-with-openssl-failure/27534629#27534629)
+
+Install Sass
+    gem install sass
+    
+Install Compass
+    gem install compass
+
+
 #### Launch the starter project
 
 Fork this repository, then clone your fork, and run your play application using either the `play run` or the `sbt run` command. Then, open your browser at http://localhost:9000/

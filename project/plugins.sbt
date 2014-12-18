@@ -3,7 +3,8 @@ resolvers += "Typesafe repository" at "http://repo.typesafe.com/typesafe/release
 // The Play plugin
 addSbtPlugin("com.typesafe.play" % "sbt-plugin" % "2.3.4")
 
-resolvers += "Sonatype OSS Releases" at "https://oss.sonatype.org/content/repositories/releases"
+
+resolvers += Resolver.url("GitHub repository", url("http://shaggyyeti.github.io/releases"))(Resolver.ivyStylePatterns)
 
 // The SASS plugin
-addSbtPlugin("net.litola" % "play-sass" % "0.4.0")
+addSbtPlugin("default" % "sbt-sass" % "0.1.9")
