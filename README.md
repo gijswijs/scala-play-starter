@@ -6,20 +6,31 @@ This is a blank [Play framework](http://www.playframework.com) project that will
 
 ####prerequisites for a windows development machine
 Install Java Development Kit 7 (easiest to do with chocolatey)
-    choco install jdk.install
+```
+choco install jdk.install
+```
     
-Install typesafe activator
+Install typesafe activator. You could try Chocolatey, but I didn't test that. Otherwise follow the manual from typesafe: http://typesafe.com/get-started
+```
+choco install play
+```
 Add path to activator folder to you path environment variable
     
 Install Ruby
+```
+choco install ruby
+```
 (if needed, fix the SSL problem: http://stackoverflow.com/questions/15305350/gem-install-fails-with-openssl-failure/27534629#27534629)
 
-Install Sass
-    gem install sass
-    
-Install Compass
-    gem install compass
+Install Bundler
+```
+gem install bundler
+```
 
+Run bundler (while in the project's root directory, where the gemfile lives)
+```
+bundler install
+```
 
 #### Launch the starter project
 
